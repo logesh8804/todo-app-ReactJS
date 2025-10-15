@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Todoitem from './todoitem.jsx'
+import Todoitem from '@/components/todoitem.jsx'
 
 export const Todo = () => {
   
