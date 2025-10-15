@@ -62,8 +62,8 @@ export const Todo = () => {
           {todolist.length === 0?(
             <p className='text-gray-500 text-sm'>No task found!</p>
           ):(
-            todolist.map((todo, index) => {
-              return <Todoitem text={todo.text} key={index} isCompleted={todo.isCompleted} id={todo.id} toggleTask={toggleTask} dltTodo={dltTodo} />
+            todolist.map((todo) => {
+              return <Todoitem text={todo.text} key={todo.id} isCompleted={todo.isCompleted} id={todo.id} toggleTask={toggleTask} dltTodo={dltTodo} />
             })
           )}
         
